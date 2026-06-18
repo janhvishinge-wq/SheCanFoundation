@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>She Can Foundation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#e91e63;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#e91e63;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+    background:
+    linear-gradient(rgba(233,30,99,.75),
+    rgba(156,39,176,.75)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#e91e63;
+    padding:14px 32px;
+    border-radius:40px;
+    font-weight:600;
+    margin:10px;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn2{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#e91e63;
+    margin-bottom:20px;
+}
+
+/* About */
+.about{
+    padding:100px 10%;
+    text-align:center;
+    background:white;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Impact */
+.impact{
+    padding:100px 10%;
+    background:#f4f4f4;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.stat-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h3{
+    color:#e91e63;
+    font-size:38px;
+}
+
+/* Programs */
+.programs{
+    padding:100px 10%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#e91e63;
+    margin-bottom:15px;
+}
+
+/* Image Section */
+.gallery{
+    padding:100px 10%;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+.gallery img{
+    width:100%;
+    max-width:850px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Join */
+.join{
+    padding:100px 10%;
+    text-align:center;
+    background:linear-gradient(135deg,#e91e63,#9c27b0);
+    color:white;
+}
+
+.join h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.join p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.join .btn{
+    background:white;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+nav ul{
+    display:none;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">She Can Foundation</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#join">Join Us</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>She Can. She Will. We Support.</h1>
+        <p>
+            Empowering women through education, leadership,
+            skill development and community support.
+        </p>
+
+        <a href="#join" class="btn">Join Us</a>
+        <a href="#about" class="btn btn2">Learn More</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p>
+        She Can Foundation is dedicated to empowering women and girls
+        by providing opportunities for education, skill development,
+        mentorship and community engagement. We believe every woman
+        deserves the chance to achieve her dreams and become a leader
+        in her community.
+    </p>
+</section>
+
+<section class="impact" id="impact">
+
+    <h2 class="section-title">Our Impact</h2>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>500+</h3>
+            <p>Women Empowered</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>100+</h3>
+            <p>Active Volunteers</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>50+</h3>
+            <p>Workshops Conducted</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>20+</h3>
+            <p>Community Projects</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="programs" id="programs">
+
+    <h2 class="section-title">Our Programs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Education Support</h3>
+            <p>
+                Helping girls gain access to quality education
+                and learning resources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Skill Development</h3>
+            <p>
+                Training women with practical skills for career
+                growth and financial independence.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Community Outreach</h3>
+            <p>
+                Building stronger communities through awareness
+                campaigns and social initiatives.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2 class="section-title">Together We Rise</h2>
+
+    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600"
+         alt="Women Empowerment">
+
+</section>
+
+<section class="join" id="join">
+
+    <h2>Become a Volunteer</h2>
+
+    <p>
+        Join our mission and help create opportunities for women
+        and girls across communities.
+    </p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkWhl2uvam9hVrbHkkE0vahg1T5KxWliQZeXOaW6SPUGz50w/viewform?usp=publish-editor" class="btn">Volunteer Now</a>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 She Can Foundation | Empowering Women, Creating Change
+    </p>
+</footer>
+
+</body>
+</html>
